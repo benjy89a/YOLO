@@ -1,0 +1,199 @@
+{
+  "task": "detect",
+  "model": "yolo26n.pt",
+  "image": "input/20180309_190421.jpg",
+  "image_size_hw": [
+    2988,
+    5312
+  ],
+  "coord_format": "xyxy, 원본 이미지 픽셀 단위 (0~1 정규화 아님)",
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "device": "cpu"
+  },
+  "count_by_class": {
+    "person": 8,
+    "dining table": 1,
+    "cell phone": 1,
+    "bowl": 1
+  },
+  "detections": [
+    {
+      "id": 0,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.9076,
+      "box_xyxy_px": [
+        3795.9,
+        10.2,
+        5247.9,
+        1558.7
+      ],
+      "box_wh_px": [
+        1452.0,
+        1548.5
+      ]
+    },
+    {
+      "id": 1,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.8682,
+      "box_xyxy_px": [
+        2580.2,
+        1397.0,
+        5304.8,
+        2973.0
+      ],
+      "box_wh_px": [
+        2724.6,
+        1576.0
+      ]
+    },
+    {
+      "id": 2,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.8672,
+      "box_xyxy_px": [
+        2707.4,
+        4.8,
+        3752.5,
+        1309.5
+      ],
+      "box_wh_px": [
+        1045.1,
+        1304.7
+      ]
+    },
+    {
+      "id": 3,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.5278,
+      "box_xyxy_px": [
+        0.0,
+        1197.4,
+        1705.3,
+        2963.1
+      ],
+      "box_wh_px": [
+        1705.3,
+        1765.7
+      ]
+    },
+    {
+      "id": 4,
+      "class_id": 60,
+      "class_name": "dining table",
+      "confidence": 0.5096,
+      "box_xyxy_px": [
+        1153.3,
+        1112.3,
+        3874.8,
+        2978.3
+      ],
+      "box_wh_px": [
+        2721.4,
+        1865.9
+      ]
+    },
+    {
+      "id": 5,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.4934,
+      "box_xyxy_px": [
+        0.0,
+        2079.7,
+        1253.4,
+        2988.0
+      ],
+      "box_wh_px": [
+        1253.4,
+        908.3
+      ]
+    },
+    {
+      "id": 6,
+      "class_id": 67,
+      "class_name": "cell phone",
+      "confidence": 0.378,
+      "box_xyxy_px": [
+        2302.3,
+        2542.3,
+        3063.7,
+        2988.0
+      ],
+      "box_wh_px": [
+        761.5,
+        445.7
+      ]
+    },
+    {
+      "id": 7,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.3665,
+      "box_xyxy_px": [
+        3589.3,
+        1.6,
+        4018.4,
+        865.5
+      ],
+      "box_wh_px": [
+        429.1,
+        863.9
+      ]
+    },
+    {
+      "id": 8,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.3555,
+      "box_xyxy_px": [
+        1.0,
+        801.0,
+        240.6,
+        1386.4
+      ],
+      "box_wh_px": [
+        239.6,
+        585.5
+      ]
+    },
+    {
+      "id": 9,
+      "class_id": 45,
+      "class_name": "bowl",
+      "confidence": 0.3034,
+      "box_xyxy_px": [
+        2860.8,
+        1247.2,
+        3557.9,
+        1828.6
+      ],
+      "box_wh_px": [
+        697.1,
+        581.4
+      ]
+    },
+    {
+      "id": 10,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.25,
+      "box_xyxy_px": [
+        1.6,
+        1177.3,
+        1402.2,
+        2269.0
+      ],
+      "box_wh_px": [
+        1400.6,
+        1091.7
+      ]
+    }
+  ]
+}

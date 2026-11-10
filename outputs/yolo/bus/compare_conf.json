@@ -1,0 +1,7 @@
+{
+  "conf_low": 0.25,
+  "conf_high": 0.5,
+  "count_low": 5,
+  "count_high": 5,
+  "removed_when_raising_conf": []
+}

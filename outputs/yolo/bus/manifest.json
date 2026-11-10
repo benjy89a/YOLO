@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-11-10T19:21:33",
+  "input_file": "input/bus.jpg",
+  "input_source": "Ultralytics 예제 이미지 (https://ultralytics.com/images/bus.jpg), 공개 예제",
+  "input_size_hw": [
+    1080,
+    810
+  ],
+  "privacy": {
+    "exif_gps": "출력 이미지는 OpenCV로 다시 저장해 EXIF(GPS 포함)가 들어가지 않음",
+    "mosaic_regions": [],
+    "mosaic_applies_to": "저장된 결과 그림(original/detect/segment jpg)에만 적용. 모델 입력과 JSON 좌표·마스크는 원본 기준",
+    "original_input_submitted": null
+  },
+  "models": {
+    "detect": "models/yolo26n.pt",
+    "segment": "models/yolo26n-seg.pt"
+  },
+  "packages": {
+    "python": "3.14.0",
+    "ultralytics": "8.4.208",
+    "torch": "2.15.0+cpu",
+    "opencv": "5.0.0",
+    "numpy": "2.5.4"
+  },
+  "run_location": {
+    "where": "local",
+    "os": "Windows 11",
+    "venv": "D:/aiffel/YOLO/.venv/Scripts/python.exe"
+  },
+  "settings": {
+    "imgsz": 640,
+    "device": "cpu",
+    "conf": [
+      0.25,
+      0.5
+    ]
+  },
+  "code": "yolo_service.py",
+  "outputs": [
+    "original.jpg",
+    "detect/conf0.25.jpg",
+    "detect/conf0.25.json",
+    "segment/conf0.25.jpg",
+    "segment/conf0.25.json",
+    "segment/masks/conf0.25/ (5개)",
+    "detect/conf0.50.jpg",
+    "detect/conf0.50.json",
+    "segment/conf0.50.jpg",
+    "segment/conf0.50.json",
+    "segment/masks/conf0.50/ (5개)",
+    "compare_conf.json"
+  ]
+}

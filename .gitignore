@@ -1,0 +1,10 @@
+# 가상환경 · 캐시
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.claude/
+
+# 개인 원본 사진: 제출하지 않음 (얼굴·번호판·GPS 정보 포함)
+# 결과 그림(outputs/)에는 privacy_regions.json 기준으로 모자이크가 들어감
+input/*
+!input/bus.jpg

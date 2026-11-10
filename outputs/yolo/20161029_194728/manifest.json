@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-11-10T19:21:39",
+  "input_file": "input/20161029_194728.jpg",
+  "input_source": "직접 촬영(본인). 번호판 모자이크 후 과제 제출용으로만 공유. 원본은 제출하지 않음",
+  "input_size_hw": [
+    5312,
+    2988
+  ],
+  "privacy": {
+    "exif_gps": "출력 이미지는 OpenCV로 다시 저장해 EXIF(GPS 포함)가 들어가지 않음",
+    "mosaic_regions": [
+      {
+        "label": "license plate (front red car)",
+        "xyxy": [
+          860,
+          3060,
+          1600,
+          3390
+        ]
+      },
+      {
+        "label": "license plate (parked car, left)",
+        "xyxy": [
+          180,
+          1190,
+          310,
+          1270
+        ]
+      },
+      {
+        "label": "license plate area (far white car)",
+        "xyxy": [
+          1750,
+          1120,
+          2010,
+          1240
+        ]
+      }
+    ],
+    "mosaic_applies_to": "저장된 결과 그림(original/detect/segment jpg)에만 적용. 모델 입력과 JSON 좌표·마스크는 원본 기준",
+    "original_input_submitted": false
+  },
+  "models": {
+    "detect": "models/yolo26n.pt",
+    "segment": "models/yolo26n-seg.pt"
+  },
+  "packages": {
+    "python": "3.14.0",
+    "ultralytics": "8.4.208",
+    "torch": "2.15.0+cpu",
+    "opencv": "5.0.0",
+    "numpy": "2.5.4"
+  },
+  "run_location": {
+    "where": "local",
+    "os": "Windows 11",
+    "venv": "D:/aiffel/YOLO/.venv/Scripts/python.exe"
+  },
+  "settings": {
+    "imgsz": 640,
+    "device": "cpu",
+    "conf": [
+      0.25,
+      0.5
+    ]
+  },
+  "code": "yolo_service.py",
+  "outputs": [
+    "original.jpg",
+    "detect/conf0.25.jpg",
+    "detect/conf0.25.json",
+    "segment/conf0.25.jpg",
+    "segment/conf0.25.json",
+    "segment/masks/conf0.25/ (3개)",
+    "detect/conf0.50.jpg",
+    "detect/conf0.50.json",
+    "segment/conf0.50.jpg",
+    "segment/conf0.50.json",
+    "segment/masks/conf0.50/ (2개)",
+    "compare_conf.json"
+  ]
+}

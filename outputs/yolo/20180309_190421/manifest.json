@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-11-10T19:21:51",
+  "input_file": "input/20180309_190421.jpg",
+  "input_source": "직접 촬영(본인). 촬영된 분들의 공유 동의는 받지 않아 얼굴 모자이크 후 과제 제출용으로만 공유. 원본은 제출하지 않음",
+  "input_size_hw": [
+    2988,
+    5312
+  ],
+  "privacy": {
+    "exif_gps": "출력 이미지는 OpenCV로 다시 저장해 EXIF(GPS 포함)가 들어가지 않음",
+    "mosaic_regions": [
+      {
+        "label": "face (green shirt, top right)",
+        "xyxy": [
+          3880,
+          0,
+          4500,
+          720
+        ]
+      },
+      {
+        "label": "face (glasses, bottom right)",
+        "xyxy": [
+          3500,
+          1760,
+          4200,
+          2700
+        ]
+      },
+      {
+        "label": "chin (blue jacket, top edge)",
+        "xyxy": [
+          3120,
+          0,
+          3520,
+          130
+        ]
+      }
+    ],
+    "mosaic_applies_to": "저장된 결과 그림(original/detect/segment jpg)에만 적용. 모델 입력과 JSON 좌표·마스크는 원본 기준",
+    "original_input_submitted": false
+  },
+  "models": {
+    "detect": "models/yolo26n.pt",
+    "segment": "models/yolo26n-seg.pt"
+  },
+  "packages": {
+    "python": "3.14.0",
+    "ultralytics": "8.4.208",
+    "torch": "2.15.0+cpu",
+    "opencv": "5.0.0",
+    "numpy": "2.5.4"
+  },
+  "run_location": {
+    "where": "local",
+    "os": "Windows 11",
+    "venv": "D:/aiffel/YOLO/.venv/Scripts/python.exe"
+  },
+  "settings": {
+    "imgsz": 640,
+    "device": "cpu",
+    "conf": [
+      0.25,
+      0.5
+    ]
+  },
+  "code": "yolo_service.py",
+  "outputs": [
+    "original.jpg",
+    "detect/conf0.25.jpg",
+    "detect/conf0.25.json",
+    "segment/conf0.25.jpg",
+    "segment/conf0.25.json",
+    "segment/masks/conf0.25/ (9개)",
+    "detect/conf0.50.jpg",
+    "detect/conf0.50.json",
+    "segment/conf0.50.jpg",
+    "segment/conf0.50.json",
+    "segment/masks/conf0.50/ (5개)",
+    "compare_conf.json"
+  ]
+}

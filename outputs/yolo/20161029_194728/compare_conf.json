@@ -1,0 +1,24 @@
+{
+  "conf_low": 0.25,
+  "conf_high": 0.5,
+  "count_low": 3,
+  "count_high": 2,
+  "removed_when_raising_conf": [
+    {
+      "id": 2,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.4128,
+      "box_xyxy_px": [
+        1757.0,
+        982.4,
+        2031.8,
+        1206.4
+      ],
+      "box_wh_px": [
+        274.8,
+        224.0
+      ]
+    }
+  ]
+}

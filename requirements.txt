@@ -1,0 +1,9 @@
+ipykernel==7.4.0
+ipywidgets==8.1.9
+jupyter==1.1.1
+matplotlib==3.11.2
+numpy==2.5.4
+opencv-python==5.0.0.93
+torch==2.15.0
+torchvision==0.29.2
+ultralytics==8.4.208

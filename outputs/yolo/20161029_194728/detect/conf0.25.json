@@ -1,0 +1,68 @@
+{
+  "task": "detect",
+  "model": "yolo26n.pt",
+  "image": "input/20161029_194728.jpg",
+  "image_size_hw": [
+    5312,
+    2988
+  ],
+  "coord_format": "xyxy, 원본 이미지 픽셀 단위 (0~1 정규화 아님)",
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "device": "cpu"
+  },
+  "count_by_class": {
+    "car": 3
+  },
+  "detections": [
+    {
+      "id": 0,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.9205,
+      "box_xyxy_px": [
+        99.0,
+        1166.9,
+        2617.9,
+        3499.6
+      ],
+      "box_wh_px": [
+        2519.0,
+        2332.7
+      ]
+    },
+    {
+      "id": 1,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.7859,
+      "box_xyxy_px": [
+        132.3,
+        1052.1,
+        549.8,
+        1295.9
+      ],
+      "box_wh_px": [
+        417.5,
+        243.8
+      ]
+    },
+    {
+      "id": 2,
+      "class_id": 2,
+      "class_name": "car",
+      "confidence": 0.4128,
+      "box_xyxy_px": [
+        1757.0,
+        982.4,
+        2031.8,
+        1206.4
+      ],
+      "box_wh_px": [
+        274.8,
+        224.0
+      ]
+    }
+  ]
+}

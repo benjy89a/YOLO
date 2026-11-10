@@ -1,0 +1,13 @@
+{
+  "_설명": "결과 이미지에서 모자이크할 영역. 좌표는 원본 사진 픽셀 기준 [x1, y1, x2, y2]. 모델 입력(원본)은 가리지 않고, 저장되는 결과 그림에만 적용함.",
+  "20161029_194728.jpg": [
+    {"label": "license plate (front red car)", "xyxy": [860, 3060, 1600, 3390]},
+    {"label": "license plate (parked car, left)", "xyxy": [180, 1190, 310, 1270]},
+    {"label": "license plate area (far white car)", "xyxy": [1750, 1120, 2010, 1240]}
+  ],
+  "20180309_190421.jpg": [
+    {"label": "face (green shirt, top right)", "xyxy": [3880, 0, 4500, 720]},
+    {"label": "face (glasses, bottom right)", "xyxy": [3500, 1760, 4200, 2700]},
+    {"label": "chin (blue jacket, top edge)", "xyxy": [3120, 0, 3520, 130]}
+  ]
+}

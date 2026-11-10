@@ -1,0 +1,101 @@
+{
+  "task": "detect",
+  "model": "yolo26n.pt",
+  "image": "input/20180309_190421.jpg",
+  "image_size_hw": [
+    2988,
+    5312
+  ],
+  "coord_format": "xyxy, 원본 이미지 픽셀 단위 (0~1 정규화 아님)",
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.5,
+    "device": "cpu"
+  },
+  "count_by_class": {
+    "person": 4,
+    "dining table": 1
+  },
+  "detections": [
+    {
+      "id": 0,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.9076,
+      "box_xyxy_px": [
+        3795.9,
+        10.2,
+        5247.9,
+        1558.7
+      ],
+      "box_wh_px": [
+        1452.0,
+        1548.5
+      ]
+    },
+    {
+      "id": 1,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.8682,
+      "box_xyxy_px": [
+        2580.2,
+        1397.0,
+        5304.8,
+        2973.0
+      ],
+      "box_wh_px": [
+        2724.6,
+        1576.0
+      ]
+    },
+    {
+      "id": 2,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.8672,
+      "box_xyxy_px": [
+        2707.4,
+        4.8,
+        3752.5,
+        1309.5
+      ],
+      "box_wh_px": [
+        1045.1,
+        1304.7
+      ]
+    },
+    {
+      "id": 3,
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.5278,
+      "box_xyxy_px": [
+        0.0,
+        1197.4,
+        1705.3,
+        2963.1
+      ],
+      "box_wh_px": [
+        1705.3,
+        1765.7
+      ]
+    },
+    {
+      "id": 4,
+      "class_id": 60,
+      "class_name": "dining table",
+      "confidence": 0.5096,
+      "box_xyxy_px": [
+        1153.3,
+        1112.3,
+        3874.8,
+        2978.3
+      ],
+      "box_wh_px": [
+        2721.4,
+        1865.9
+      ]
+    }
+  ]
+}

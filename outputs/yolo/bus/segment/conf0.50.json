@@ -1,0 +1,95 @@
+{
+  "task": "segment",
+  "model": "yolo26n-seg.pt",
+  "image": "input/bus.jpg",
+  "image_size_hw": [
+    1080,
+    810
+  ],
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.5,
+    "device": "cpu"
+  },
+  "count_by_class": {
+    "person": 4,
+    "bus": 1
+  },
+  "objects": [
+    {
+      "id": 0,
+      "class_name": "person",
+      "confidence": 0.877,
+      "box_xyxy_px": [
+        52.8,
+        396.7,
+        243.4,
+        905.9
+      ],
+      "box_area_px": 97049,
+      "mask_area_px": 49302,
+      "mask_over_box": 0.508,
+      "mask_file": "segment/masks/conf0.50/00_person.png"
+    },
+    {
+      "id": 1,
+      "class_name": "person",
+      "confidence": 0.8632,
+      "box_xyxy_px": [
+        669.2,
+        396.2,
+        809.9,
+        880.3
+      ],
+      "box_area_px": 68096,
+      "mask_area_px": 21311,
+      "mask_over_box": 0.313,
+      "mask_file": "segment/masks/conf0.50/01_person.png"
+    },
+    {
+      "id": 2,
+      "class_name": "bus",
+      "confidence": 0.8555,
+      "box_xyxy_px": [
+        4.8,
+        228.5,
+        806.6,
+        740.2
+      ],
+      "box_area_px": 410221,
+      "mask_area_px": 255375,
+      "mask_over_box": 0.623,
+      "mask_file": "segment/masks/conf0.50/02_bus.png"
+    },
+    {
+      "id": 3,
+      "class_name": "person",
+      "confidence": 0.8106,
+      "box_xyxy_px": [
+        221.1,
+        405.4,
+        344.5,
+        859.4
+      ],
+      "box_area_px": 56022,
+      "mask_area_px": 33411,
+      "mask_over_box": 0.596,
+      "mask_file": "segment/masks/conf0.50/03_person.png"
+    },
+    {
+      "id": 4,
+      "class_name": "person",
+      "confidence": 0.6484,
+      "box_xyxy_px": [
+        0.5,
+        550.4,
+        74.1,
+        872.2
+      ],
+      "box_area_px": 23681,
+      "mask_area_px": 11100,
+      "mask_over_box": 0.469,
+      "mask_file": "segment/masks/conf0.50/04_person.png"
+    }
+  ]
+}

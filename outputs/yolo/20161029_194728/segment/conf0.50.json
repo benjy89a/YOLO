@@ -1,0 +1,49 @@
+{
+  "task": "segment",
+  "model": "yolo26n-seg.pt",
+  "image": "input/20161029_194728.jpg",
+  "image_size_hw": [
+    5312,
+    2988
+  ],
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.5,
+    "device": "cpu"
+  },
+  "count_by_class": {
+    "car": 2
+  },
+  "objects": [
+    {
+      "id": 0,
+      "class_name": "car",
+      "confidence": 0.946,
+      "box_xyxy_px": [
+        104.7,
+        1154.7,
+        2638.6,
+        3518.0
+      ],
+      "box_area_px": 5988473,
+      "mask_area_px": 4684992,
+      "mask_over_box": 0.782,
+      "mask_file": "segment/masks/conf0.50/00_car.png"
+    },
+    {
+      "id": 1,
+      "class_name": "car",
+      "confidence": 0.8087,
+      "box_xyxy_px": [
+        130.3,
+        1043.4,
+        553.4,
+        1294.9
+      ],
+      "box_area_px": 106388,
+      "mask_area_px": 86766,
+      "mask_over_box": 0.816,
+      "mask_file": "segment/masks/conf0.50/01_car.png"
+    }
+  ]
+}

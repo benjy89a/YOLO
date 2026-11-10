@@ -1,0 +1,106 @@
+[
+  {
+    "image": "20161029_194728",
+    "folder": "outputs/yolo/20161029_194728",
+    "conf0.25": {
+      "detect": {
+        "car": 3
+      },
+      "segment": {
+        "car": 3
+      }
+    },
+    "conf0.50": {
+      "detect": {
+        "car": 2
+      },
+      "segment": {
+        "car": 2
+      }
+    },
+    "removed_when_raising_conf": [
+      [
+        "car",
+        0.4128
+      ]
+    ]
+  },
+  {
+    "image": "20180309_190421",
+    "folder": "outputs/yolo/20180309_190421",
+    "conf0.25": {
+      "detect": {
+        "person": 8,
+        "dining table": 1,
+        "cell phone": 1,
+        "bowl": 1
+      },
+      "segment": {
+        "person": 6,
+        "dining table": 1,
+        "pizza": 1,
+        "bowl": 1
+      }
+    },
+    "conf0.50": {
+      "detect": {
+        "person": 4,
+        "dining table": 1
+      },
+      "segment": {
+        "person": 5
+      }
+    },
+    "removed_when_raising_conf": [
+      [
+        "person",
+        0.4934
+      ],
+      [
+        "cell phone",
+        0.378
+      ],
+      [
+        "person",
+        0.3665
+      ],
+      [
+        "person",
+        0.3555
+      ],
+      [
+        "bowl",
+        0.3034
+      ],
+      [
+        "person",
+        0.25
+      ]
+    ]
+  },
+  {
+    "image": "bus",
+    "folder": "outputs/yolo/bus",
+    "conf0.25": {
+      "detect": {
+        "bus": 1,
+        "person": 4
+      },
+      "segment": {
+        "person": 4,
+        "bus": 1
+      }
+    },
+    "conf0.50": {
+      "detect": {
+        "bus": 1,
+        "person": 4
+      },
+      "segment": {
+        "person": 4,
+        "bus": 1
+      }
+    },
+    "removed_when_raising_conf": []
+  }
+]

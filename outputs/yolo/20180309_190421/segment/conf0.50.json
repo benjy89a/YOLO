@@ -1,0 +1,94 @@
+{
+  "task": "segment",
+  "model": "yolo26n-seg.pt",
+  "image": "input/20180309_190421.jpg",
+  "image_size_hw": [
+    2988,
+    5312
+  ],
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.5,
+    "device": "cpu"
+  },
+  "count_by_class": {
+    "person": 5
+  },
+  "objects": [
+    {
+      "id": 0,
+      "class_name": "person",
+      "confidence": 0.9109,
+      "box_xyxy_px": [
+        3790.8,
+        6.9,
+        5246.2,
+        1556.9
+      ],
+      "box_area_px": 2255899,
+      "mask_area_px": 1761392,
+      "mask_over_box": 0.781,
+      "mask_file": "segment/masks/conf0.50/00_person.png"
+    },
+    {
+      "id": 1,
+      "class_name": "person",
+      "confidence": 0.8705,
+      "box_xyxy_px": [
+        2735.9,
+        0.0,
+        3731.0,
+        1307.6
+      ],
+      "box_area_px": 1301171,
+      "mask_area_px": 890254,
+      "mask_over_box": 0.684,
+      "mask_file": "segment/masks/conf0.50/01_person.png"
+    },
+    {
+      "id": 2,
+      "class_name": "person",
+      "confidence": 0.8587,
+      "box_xyxy_px": [
+        2569.4,
+        1390.3,
+        5312.0,
+        2960.5
+      ],
+      "box_area_px": 4306488,
+      "mask_area_px": 2830237,
+      "mask_over_box": 0.657,
+      "mask_file": "segment/masks/conf0.50/02_person.png"
+    },
+    {
+      "id": 3,
+      "class_name": "person",
+      "confidence": 0.7401,
+      "box_xyxy_px": [
+        0.0,
+        1770.4,
+        1690.7,
+        2970.2
+      ],
+      "box_area_px": 2028616,
+      "mask_area_px": 1267403,
+      "mask_over_box": 0.625,
+      "mask_file": "segment/masks/conf0.50/03_person.png"
+    },
+    {
+      "id": 4,
+      "class_name": "person",
+      "confidence": 0.7309,
+      "box_xyxy_px": [
+        0.9,
+        1119.8,
+        1440.7,
+        2268.1
+      ],
+      "box_area_px": 1653339,
+      "mask_area_px": 478169,
+      "mask_over_box": 0.289,
+      "mask_file": "segment/masks/conf0.50/04_person.png"
+    }
+  ]
+}
